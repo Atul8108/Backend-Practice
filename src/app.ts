@@ -1,5 +1,6 @@
 import express from "express";
 import globalErrorHandler from "./middlewares/globalErrorHandlers";
+import createHttpError from "http-errors";
 
 const app = express();
 
