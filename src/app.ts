@@ -1,9 +1,10 @@
 import express from "express";
 import globalErrorHandler from "./middlewares/globalErrorHandlers";
-import createHttpError from "http-errors";
 import userRouter from "./user/userRouter";
 
 const app = express();
+
+app.use(express.json());
 
 //Routes
 
